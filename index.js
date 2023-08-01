@@ -5,7 +5,6 @@ const homeRoutes = require('./routes/home-routes');
 
 const app = express();
 
-
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
@@ -14,4 +13,4 @@ app.use('/docs', express.static(path.join(__dirname, 'docs')));
 app.use(homeRoutes.routes);
 
 
-app.listen(8081, () => console.log('App is listening on url http://localhost:8081'));
+app.listen(8080, () => console.log('App is listening on url http://localhost:8080'));
